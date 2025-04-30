@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-style: normal;
+}
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-size: 15px;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: 0.2px;
+}
+:root {
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #ffffff;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+}
+body {
+  background-color: var(--color-slate-300);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.title {
+  color: var(--color-slate-900);
+  text-align: center;
+  padding: 0 var(--spacing-200);
+}
+
+.subtitle {
+  color: var(--color-slate-500);
+  text-align: center;
+  padding: 0 var(--spacing-200);
+}
+
+.qr-section {
+  width: 320px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  padding: var(--spacing-200);
+  padding-bottom: var(--spacing-500);
+  display: grid;
+  gap: var(--spacing-200);
+}
+.image-section {
+  order: -1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
